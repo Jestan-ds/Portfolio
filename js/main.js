@@ -143,25 +143,3 @@ sr.reveal(`.home__perfil, .about__image, .contact__mail`, {origin:'right'})
 sr.reveal(`.home__name, .home__info, .about__container, .setion__title-1, .about__info, .contact__social, .contact__data `, {origin:'left'})
 sr.reveal(`.services__card, .projects__card`, {interval:100})
 
-var tl = gsap.timeline({scrollTrigger:{
-    trigger:"#main1",
-    start:"50% 50%",
-    end:"100% 50%",
-    scrub:2,
-    pin:true
-}});
-
-tl
-.to("#top",{
-    top:"-50%"
-},'a')
-.to("#bottom",{
-    top:"50%"
-},'a')
-
-.to("#top-h",{
-    top:"70%"
-},'a')
-.to("#bottom-h",{
-    bottom:"-80%"
-},'a')
